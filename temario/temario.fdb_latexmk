@@ -1,0 +1,24 @@
+# Fdb version 4
+["pdflatex"] 1694577975 "c:/Users/user/Documents/GitHub/latex-new-dimensions/temario/temario.tex" "temario.pdf" "temario" 1694577976 0
+  "c:/Users/user/Documents/GitHub/latex-new-dimensions/temario/temario.tex" 1694577975 279 c20dca44e661ebe1d4e432e0ca4c4398 ""
+  "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1692654128 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1692651895 1524 4414a8315f39513458b80dfc63bff03a ""
+  "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1692651895 1288 655e228510b4c2a1abe905c368440826 ""
+  "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1692651895 1292 296a67155bdbfc32aa9c636f21e91433 ""
+  "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1692651895 1124 6c73e740cf17375f03eec0ee63599741 ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1692649241 32722 d7379af29a190c3f453aba36302ff5a9 ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1692649241 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
+  "c:/texlive/2023/texmf-dist/tex/latex/base/article.cls" 1692656265 20144 fbcf51733730d8f1a62143512ff5b1fe ""
+  "c:/texlive/2023/texmf-dist/tex/latex/base/size12.clo" 1692656265 8449 9de778d73ba774a5f2bd601f23f8922e ""
+  "c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1692656198 29940 9473d58112bc8a88f5505b823a053dde ""
+  "c:/texlive/2023/texmf-dist/web2c/texmf.cnf" 1692644883 40967 d940221f8762fd5848760382d97d1226 ""
+  "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1692661055 4702526 736de8e4b26c2238ba95a1d1c0135e95 ""
+  "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1692661249 8172745 3d6ec7e84d0c398f05c327a53d12c2e5 ""
+  "c:/texlive/2023/texmf.cnf" 1692661034 713 e69b156964470283e0530f5060668171 ""
+  "temario.aux" 1694577976 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "temario.tex" 1694577975 279 c20dca44e661ebe1d4e432e0ca4c4398 ""
+  (generated)
+  "temario.aux"
+  "temario.log"
+  "temario.pdf"
+  (rewritten before read)
