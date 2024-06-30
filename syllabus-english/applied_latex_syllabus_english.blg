@@ -1,0 +1,4 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'applied_latex_syllabus_english.blg'
+[141] biber-MSWIN64:340> INFO - === 
+[219] Biber.pm:419> INFO - Reading 'applied_latex_syllabus_english.bcf'
