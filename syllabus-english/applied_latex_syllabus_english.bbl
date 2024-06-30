@@ -1,0 +1,349 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Frain.July2014}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5ca851fcac122fbb2dba13df17a6683f}{%
+           family={Frain},
+           familyi={F\bibinitperiod},
+           given={John\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Trinity College Dublin}%
+      }
+      \strng{namehash}{5ca851fcac122fbb2dba13df17a6683f}
+      \strng{fullhash}{5ca851fcac122fbb2dba13df17a6683f}
+      \strng{bibnamehash}{5ca851fcac122fbb2dba13df17a6683f}
+      \strng{authorbibnamehash}{5ca851fcac122fbb2dba13df17a6683f}
+      \strng{authornamehash}{5ca851fcac122fbb2dba13df17a6683f}
+      \strng{authorfullhash}{5ca851fcac122fbb2dba13df17a6683f}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Applied LATEX for Economists, Social Scientists and Others: TEP Working Paper No. 0214}
+      \field{titlekey}{Frain.July2014}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \true{nocite}
+    \endentry
+    \entry{Goossens.1997}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0743efb276e9219ee664a9b3dbd60619}{%
+           family={Goossens},
+           familyi={G\bibinitperiod},
+           given={Michel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=88285c93e91e730597ee9a019ffc65c3}{%
+           family={{Rahtz, Sebastian, Mittelbach, Frank}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{0d06ee02e9a61cbd5bf62e0644ffec36}
+      \strng{fullhash}{0d06ee02e9a61cbd5bf62e0644ffec36}
+      \strng{bibnamehash}{0d06ee02e9a61cbd5bf62e0644ffec36}
+      \strng{authorbibnamehash}{0d06ee02e9a61cbd5bf62e0644ffec36}
+      \strng{authornamehash}{0d06ee02e9a61cbd5bf62e0644ffec36}
+      \strng{authorfullhash}{0d06ee02e9a61cbd5bf62e0644ffec36}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The LaTeX Graphics Companion: Illustrating documents with TeX and PostScript}
+      \field{titlekey}{Goossens.1997}
+      \field{year}{1997}
+      \true{nocite}
+    \endentry
+    \entry{Goulding.2011}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=90e016666b1f85ea64c8bee3bb49f2d1}{%
+           family={Goulding},
+           familyi={G\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{90e016666b1f85ea64c8bee3bb49f2d1}
+      \strng{fullhash}{90e016666b1f85ea64c8bee3bb49f2d1}
+      \strng{bibnamehash}{90e016666b1f85ea64c8bee3bb49f2d1}
+      \strng{authorbibnamehash}{90e016666b1f85ea64c8bee3bb49f2d1}
+      \strng{authornamehash}{90e016666b1f85ea64c8bee3bb49f2d1}
+      \strng{authorfullhash}{90e016666b1f85ea64c8bee3bb49f2d1}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{usepackage{Tikz} for economists}
+      \field{titlekey}{Goulding.2011}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \true{nocite}
+    \endentry
+    \entry{Greenber.July2004}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1b4b8fc6025a6e7d4052f6548a094c85}{%
+           family={Greenber},
+           familyi={G\bibinitperiod},
+           given={Harvey\bibnamedelima J.},
+           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=1b4b8fc6025a6e7d4052f6548a094c85}{%
+           family={Greenber},
+           familyi={G\bibinitperiod},
+           given={Harvey\bibnamedelima J.},
+           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {University of Colorado at Denver}%
+      }
+      \list{location}{1}{%
+        {Denver}%
+      }
+      \strng{namehash}{1b4b8fc6025a6e7d4052f6548a094c85}
+      \strng{fullhash}{1b4b8fc6025a6e7d4052f6548a094c85}
+      \strng{bibnamehash}{1b4b8fc6025a6e7d4052f6548a094c85}
+      \strng{authorbibnamehash}{1b4b8fc6025a6e7d4052f6548a094c85}
+      \strng{authornamehash}{1b4b8fc6025a6e7d4052f6548a094c85}
+      \strng{authorfullhash}{1b4b8fc6025a6e7d4052f6548a094c85}
+      \strng{editorbibnamehash}{1b4b8fc6025a6e7d4052f6548a094c85}
+      \strng{editornamehash}{1b4b8fc6025a6e7d4052f6548a094c85}
+      \strng{editorfullhash}{1b4b8fc6025a6e7d4052f6548a094c85}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{editortype}{Greenber.July2004}
+      \field{title}{A Simplified Introduction to LaTeX}
+      \field{titlekey}{Greenber.July2004}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \true{nocite}
+    \endentry
+    \entry{Griffiths.2016}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b7c7962951203ad3f8cf6ab7997edce2}{%
+           family={Griffiths},
+           familyi={G\bibinitperiod},
+           given={David\bibnamedelima F.},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=595c1684f5fe70f9a29914bdda6d2e9e}{%
+           family={Higham},
+           familyi={H\bibinitperiod},
+           given={Desmond\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Society for Industrial and Applied Mathematics}%
+      }
+      \list{location}{1}{%
+        {Philadelphia}%
+      }
+      \list{publisher}{1}{%
+        {Society for Industrial and Applied Mathematics}%
+      }
+      \strng{namehash}{143cc7a69b814d28c921ffec60b3ba08}
+      \strng{fullhash}{143cc7a69b814d28c921ffec60b3ba08}
+      \strng{bibnamehash}{143cc7a69b814d28c921ffec60b3ba08}
+      \strng{authorbibnamehash}{143cc7a69b814d28c921ffec60b3ba08}
+      \strng{authornamehash}{143cc7a69b814d28c921ffec60b3ba08}
+      \strng{authorfullhash}{143cc7a69b814d28c921ffec60b3ba08}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{Learning Latex: Second Edition}
+      \field{titlekey}{Griffiths.2016}
+      \field{year}{2016}
+      \true{nocite}
+    \endentry
+    \entry{Kottwitz.2011}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f2aca6a6bffec8f78f1feff9cbc08caa}{%
+           family={Kottwitz},
+           familyi={K\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Packt Publishing}%
+      }
+      \list{location}{1}{%
+        {Birminghan}%
+      }
+      \list{publisher}{1}{%
+        {Pack Publishing}%
+      }
+      \strng{namehash}{f2aca6a6bffec8f78f1feff9cbc08caa}
+      \strng{fullhash}{f2aca6a6bffec8f78f1feff9cbc08caa}
+      \strng{bibnamehash}{f2aca6a6bffec8f78f1feff9cbc08caa}
+      \strng{authorbibnamehash}{f2aca6a6bffec8f78f1feff9cbc08caa}
+      \strng{authornamehash}{f2aca6a6bffec8f78f1feff9cbc08caa}
+      \strng{authorfullhash}{f2aca6a6bffec8f78f1feff9cbc08caa}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{title}{LaTeX Beginner's Guide}
+      \field{titlekey}{Kottwitz.2011}
+      \field{year}{2011}
+      \true{nocite}
+    \endentry
+    \entry{Krummel.2020}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e5df0d6d74849814d95f424d1dffc31a}{%
+           family={Krummel},
+           familyi={K\bibinitperiod},
+           given={Michelle},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=e5df0d6d74849814d95f424d1dffc31a}{%
+           family={Krummel},
+           familyi={K\bibinitperiod},
+           given={Michelle},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{e5df0d6d74849814d95f424d1dffc31a}
+      \strng{fullhash}{e5df0d6d74849814d95f424d1dffc31a}
+      \strng{bibnamehash}{e5df0d6d74849814d95f424d1dffc31a}
+      \strng{authorbibnamehash}{e5df0d6d74849814d95f424d1dffc31a}
+      \strng{authornamehash}{e5df0d6d74849814d95f424d1dffc31a}
+      \strng{authorfullhash}{e5df0d6d74849814d95f424d1dffc31a}
+      \strng{editorbibnamehash}{e5df0d6d74849814d95f424d1dffc31a}
+      \strng{editornamehash}{e5df0d6d74849814d95f424d1dffc31a}
+      \strng{editorfullhash}{e5df0d6d74849814d95f424d1dffc31a}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{editortype}{Krummel.2020}
+      \field{title}{LaTeX Tutorials (featuring Texmaker)}
+      \field{titlekey}{Krummel.2020}
+      \field{year}{2020}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.youtube.com/watch?v=0ivLZh9xK1Q&list=PL1D4EAB31D3EBC449
+      \endverb
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=0ivLZh9xK1Q&list=PL1D4EAB31D3EBC449
+      \endverb
+    \endentry
+    \entry{Overleaf.}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=80d685e90fa23d7996a66e45aa2d24ad}{%
+           family={Overleaf},
+           familyi={O\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=80d685e90fa23d7996a66e45aa2d24ad}{%
+           family={Overleaf},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{80d685e90fa23d7996a66e45aa2d24ad}
+      \strng{fullhash}{80d685e90fa23d7996a66e45aa2d24ad}
+      \strng{bibnamehash}{80d685e90fa23d7996a66e45aa2d24ad}
+      \strng{authorbibnamehash}{80d685e90fa23d7996a66e45aa2d24ad}
+      \strng{authornamehash}{80d685e90fa23d7996a66e45aa2d24ad}
+      \strng{authorfullhash}{80d685e90fa23d7996a66e45aa2d24ad}
+      \strng{editorbibnamehash}{80d685e90fa23d7996a66e45aa2d24ad}
+      \strng{editornamehash}{80d685e90fa23d7996a66e45aa2d24ad}
+      \strng{editorfullhash}{80d685e90fa23d7996a66e45aa2d24ad}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{editortype}{Overleaf.}
+      \field{title}{Tutorials}
+      \field{titlekey}{Overleaf.}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.overleaf.com/learn/latex/Tutorials
+      \endverb
+      \verb{url}
+      \verb https://www.overleaf.com/learn/latex/Tutorials
+      \endverb
+    \endentry
+    \entry{YuKo.2018}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=614e4fd0f504999a40411fb286536c83}{%
+           family={{Yu Ko}},
+           familyi={Y\bibinitperiod},
+           given={Chiu},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{614e4fd0f504999a40411fb286536c83}
+      \strng{fullhash}{614e4fd0f504999a40411fb286536c83}
+      \strng{bibnamehash}{614e4fd0f504999a40411fb286536c83}
+      \strng{authorbibnamehash}{614e4fd0f504999a40411fb286536c83}
+      \strng{authornamehash}{614e4fd0f504999a40411fb286536c83}
+      \strng{authorfullhash}{614e4fd0f504999a40411fb286536c83}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Tikz Cookbook: Diagrams in Economics}
+      \field{titlekey}{YuKo.2018}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://play.google.com/books/reader?id=t3ZZDwAAQBAJ&hl=en_GB&pg=GBS.PP1
+      \endverb
+      \verb{url}
+      \verb https://play.google.com/books/reader?id=t3ZZDwAAQBAJ&hl=en_GB&pg=GBS.PP1
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -4,24 +4,123 @@
 \usepackage[american]{babel}
 \usepackage{csquotes}
 \usepackage{hyperref}
-\usepackage[margin=1cm]{geometry}
-\usepackage[style=apa,backend=biber,citestyle=apa]{biblatex}
-%\addbibresource{referencias_temario.bib}
-%\nocite{*}
+\usepackage[margin=1in]{geometry}
+\usepackage[style = windycity, backend=biber]{biblatex}
+    \addbibresource{referencias_temario.bib}
+    \nocite{*}
 
-\title{Applied \LaTeX \ for Social Science Research \\[1ex] \large{Syllabus}}
-\date{Laboratorio de Investigación para el Desarrollo del Ecuador}
+\title{Applied \LaTeX \ for Social Science Research}
+\author{Laboratorio de Investigación para el Desarrollo del Ecuador}
+\date{Syllabus}
 
 \begin{document}
 
 \maketitle
 
-\textbf{Instructor}: Daniel Sánchez, M.A.
-\textbf{Module length}: 4 hours
-\textbf{Level}: Beginner-intermediate.
+\noindent \textbf{Instructor}: Daniel Sánchez, M.A. \\
+\textbf{Module length}: 4 hours \\
+\textbf{Level}: Beginner-intermediate
 
+\section{Course Description}
 
+This short module will introduce the use of the typographic system \LaTeX, focusing on its applied use for social science research.
 
-%\printbibliography
+\section{Contents}
+
+\subsection{Introduction to \LaTeX}
+
+\begin{itemize}
+    \item Introduction to \LaTeX, what is it and what is it for?, what will we see in this course?
+    \item Brief history of \LaTeX
+    \item Preliminary issues
+    \begin{itemize}
+        \item Hardware requirements
+        \item Installation of \TeX \ distributions
+        \item Development environments (IDEs: VS Code, \TeX Maker, etc.)
+        \item Overleaf
+        \item Identification of keyboard shortcuts and important keycaps
+    \end{itemize}
+\end{itemize}
+
+\subsection{Creating documents}
+
+\begin{itemize}
+    \item Structure
+    \item Simple commands
+    \item Packages
+    \item Document classes
+    \item Basic document formatting
+    \item Text handling
+    \begin{itemize}
+        \item Alignment
+        \item Lists
+        \item Titles, covers and abstracts
+        \item Indexes
+        \item Headers and footnotes 
+    \end{itemize}
+\end{itemize}
+
+\subsection{Math mode}
+
+\begin{itemize}
+    \item Introduction to math mode
+    \item Basic symbols and greek letters
+    \item Equations
+    \item Matrices
+\end{itemize}
+
+\subsection{Tables and figures}
+
+\begin{itemize}
+    \item Basic tables
+    \item Automated table-making: Excel2LaTeX / Overleaf addins
+    \item Including figures and subfigures
+    \item \textsf{tikz} and \textsf{pgfplots} for plotting
+    
+\end{itemize}
+
+\subsection{Bibliography management with \LaTeX}
+
+\begin{itemize}
+    \item Bib\TeX \ and Bib\LaTeX
+    \item Zotero integration
+    \item Brief review of Mendeley, Citavi and other integrations
+    \item Citation and bibliography formatting, styling
+\end{itemize}
+
+\subsection{Integration with statistical packages}
+
+\begin{itemize}
+    \item Presenting data analysis results with R
+    \begin{itemize}
+        \item \textit{stargazer}
+        \item \textit{kableExtra}
+        \item \textit{modelsummary}
+        \item \textit{gt}
+    \end{itemize}
+    \item Stata
+    \begin{itemize}
+        \item \textit{estout}
+        \item \textit{outreg2}
+    \end{itemize}
+\end{itemize}
+
+\subsection{Advanced topics (if time allows)}
+
+\begin{itemize}
+    \item Multi-file projects
+    \item Advanced document formatting with classes
+    \item Cross-referencing
+    \item Presentations with beamer
+    \item Version control with Git
+    \item Using \LaTeX \ from Word
+    \item Working with Python/Jupyter
+    \item knitr/sweave
+    \item Error debugging
+    \item Codecogs
+\end{itemize}
+
+\renewcommand\bibname{Reference Material}
+\printbibliography
 
 \end{document}
