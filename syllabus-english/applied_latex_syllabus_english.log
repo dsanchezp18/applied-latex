@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.21)  29 JUN 2024 23:37
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.21)  8 JUL 2024 23:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -569,31 +569,31 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 19.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 26.
+(Font)              <8> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 26.
+(Font)              <6> on input line 23.
  [1
 
 ] [2]
 \c@pubcount=\count421
- [3] (./applied_latex_syllabus_english.aux)
+ [3] [4] (./applied_latex_syllabus_english.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-18>
  ***********
 Package rerunfilecheck Info: File `applied_latex_syllabus_english.out' has not changed.
-(rerunfilecheck)             Checksum: 224F3E3BC9E21F6EEF26027413622426;1517.
+(rerunfilecheck)             Checksum: FC90EB3E5CD40149AB7B8CEA481EEC1A;1867.
 Package logreq Info: Writing requests to 'applied_latex_syllabus_english.run.xml'.
 \openout1 = `applied_latex_syllabus_english.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18281 strings out of 474806
- 335454 string characters out of 5762493
- 1931662 words of memory out of 5000000
- 40235 multiletter control sequences out of 15000+600000
+ 18282 strings out of 474806
+ 335465 string characters out of 5762493
+ 1932662 words of memory out of 5000000
+ 40236 multiletter control sequences out of 15000+600000
  563088 words of font info for 64 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 72i,6n,81p,761b,4818s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,6n,81p,761b,4969s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on applied_latex_syllabus_english.pdf (3 pages).
+Output written on applied_latex_syllabus_english.pdf (4 pages).
