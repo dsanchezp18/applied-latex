@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.21)  13 JUL 2024 23:52
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.21)  21 JUL 2024 01:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -580,7 +580,7 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-18>
  ***********
 Package rerunfilecheck Info: File `applied_latex_syllabus_english.out' has not changed.
-(rerunfilecheck)             Checksum: A55D2C46D16666BA3D02AB8BBBBEEF16;1875.
+(rerunfilecheck)             Checksum: 831307E336330CC891067F2B03044B3E;2067.
 Package logreq Info: Writing requests to 'applied_latex_syllabus_english.run.xml'.
 \openout1 = `applied_latex_syllabus_english.run.xml'.
 
