@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'applied_latex_syllabus_english.blg'
-[133] biber-MSWIN64:340> INFO - === 
-[193] Biber.pm:419> INFO - Reading 'applied_latex_syllabus_english.bcf'
-[331] Biber.pm:976> INFO - Using all citekeys in bib section 0
-[346] Biber.pm:4419> INFO - Processing section 0
-[364] Biber.pm:4610> INFO - Looking for bibtex file 'referencias_temario.bib' for section 0
-[456] bibtex.pm:1713> INFO - LaTeX decoding ...
-[476] bibtex.pm:1519> INFO - Found BibTeX data source 'referencias_temario.bib'
-[558] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[558] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[558] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[558] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[571] bbl.pm:660> INFO - Writing 'applied_latex_syllabus_english.bbl' with encoding 'UTF-8'
-[576] bbl.pm:763> INFO - Output to applied_latex_syllabus_english.bbl
+[128] biber-MSWIN64:340> INFO - === 
+[174] Biber.pm:419> INFO - Reading 'applied_latex_syllabus_english.bcf'
+[321] Biber.pm:976> INFO - Using all citekeys in bib section 0
+[337] Biber.pm:4419> INFO - Processing section 0
+[350] Biber.pm:4610> INFO - Looking for bibtex file 'referencias_temario.bib' for section 0
+[425] bibtex.pm:1713> INFO - LaTeX decoding ...
+[438] bibtex.pm:1519> INFO - Found BibTeX data source 'referencias_temario.bib'
+[526] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[526] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[526] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[526] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[541] bbl.pm:660> INFO - Writing 'applied_latex_syllabus_english.bbl' with encoding 'UTF-8'
+[546] bbl.pm:763> INFO - Output to applied_latex_syllabus_english.bbl
