@@ -115,7 +115,32 @@
 \end{frame}
 
 \begin{frame}{Document preamble}
-    
+    \begin{itemize}
+        \item The preamble is the first part of the document, containing configuration settings for the complete document.
+        \item Technically, it is a \TeX environment (more on that later)
+        \item We can set the document class, font size, margins, packages, etc.
+        \item The preamble is enclosed between \texttt{documentclass} and \texttt{begin\{document\}} commands.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Writing commands/code}
+    \begin{itemize}
+        \item Commands start with a backslash (\textbackslash).
+        \item Commands can have arguments enclosed in curly braces (\{ \}).
+        \item Some commands have optional arguments enclosed in square brackets ([ ]).
+        \item Comments are preceded by a percent sign (\%).
+        \item Commands are case-sensitive.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Declaring the document class}
+    \begin{itemize}
+        \item The document class defines the overall layout of the document.
+        \item The most common document classes are \texttt{article}, \texttt{report}, \texttt{book}, and \texttt{beamer}.
+        \item Declared with the \texttt{documentclass} command.
+        \item We will typically work with the \texttt{article} class.
+    \texttt{\textbackslash documentclass[12pt]\{article\}}
+    \end{itemize}
 \end{frame}
 
 \end{document}
