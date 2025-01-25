@@ -5,6 +5,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage{nicefrac}
 \usepackage{biblatex}
+\usepackage{amsmath}
+\usepackage{csquotes}
 \usetheme{Berlin}
 \useoutertheme{infolines}
 \useinnertheme{rounded}
@@ -139,8 +141,163 @@
         \item The most common document classes are \texttt{article}, \texttt{report}, \texttt{book}, and \texttt{beamer}.
         \item Declared with the \texttt{documentclass} command.
         \item We will typically work with the \texttt{article} class.
-    \texttt{\textbackslash documentclass[12pt]\{article\}}
+    \texttt{\textbackslash documentclass\{article\}}
     \end{itemize}
 \end{frame}
 
+\begin{frame}{Some basic options for the document class}
+    \begin{itemize}
+        \item \texttt{10pt, 11pt, 12pt}: Sets the font size. Default is 10pt.
+        \item \texttt{a4paper, letterpaper}: Sets the paper size.
+        \item Other options are available depending on the document class.
+        \item Packages can be used to extend the functionality of the document class.
+        \item Use comments to keep track of the options used!
+    \end{itemize}
+\end{frame}
+\begin{frame}{The document environment}
+    \begin{itemize}
+        \item The \texttt{document} environment is where the content of the document is placed.
+        \item It is enclosed within the \texttt{begin\{document\}} and \texttt{end\{document\}} commands.
+        \item  All \LaTeX \ environments require a \texttt{begin} and \texttt{end} command.
+        \item Nothing should be written after the \texttt{end\{document\}} command.
+        \item Before the \texttt{begin\{document\}} command, we have the preamble.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Writing some text}
+    \begin{itemize}
+        \item Text is written directly in the document environment.
+        \item \LaTeX \ ignores multiple spaces. 
+        \item Use the \texttt{\textbackslash\textbackslash} command to start a new line.
+        \item Use the \texttt{\textbackslash par} command to start a new paragraph.
+        \item Use the \texttt{\textbackslash newline} command to start a new line.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Basic text management}
+    \begin{itemize}
+        \item To italicize text, use the \texttt{\textbackslash textit\{\}} command.
+        \item To bold text, use the \texttt{\textbackslash textbf\{\}} command.
+        \item To underline text, use the \texttt{\textbackslash underline\{\}} command.
+        \item To change the font size, use the \texttt{\textbackslash tiny}, \texttt{\textbackslash small}, \texttt{\textbackslash large}, etc. commands.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Special characters}
+    \begin{itemize}
+    \item Some characters have special meanings in \LaTeX, hence, they need to be escaped to be printed in the document.
+    \item The following characters are reserved: \texttt{\# \$ \% \^{} \& \_ \{ \} \~{}}.
+    \item To print these characters, use the \texttt{\textbackslash\#}, \texttt{\textbackslash\$}, \texttt{\textbackslash\%}, etc. commands.
+    \item The \texttt{\textbackslash} itself is printed with \texttt{\textbackslash textbackslash}.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Structure}
+    \begin{itemize}
+        \item \LaTeX \ provides commands to structure the document with sections, subsections, and subsubsections.
+        \item It is generally a good idea to use these commands to organize the content of the document.
+        \item \LaTeX-produced PDFs generally bookmark the sections, making navigation easier (if the viewer supports it and a package is used, more on that later).
+    \end{itemize}
+\end{frame}
+\begin{frame}{Structure commands}
+    \begin{itemize}
+        \item \texttt{\textbackslash section\{Section title\}}
+        \item \texttt{\textbackslash subsection\{Subsection title\}}
+        \item \texttt{\textbackslash subsubsection\{Subsubsection title\}}
+        \item \texttt{\textbackslash paragraph\{Paragraph title\}}
+        \item \texttt{\textbackslash subparagraph\{Subparagraph title\}}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Titles}
+    \begin{itemize}
+        \item In the preamble of the document, one can define \enquote{document metadata} such as the title, author, and date.
+        \item This information can be printed in the document using the \texttt{\textbackslash maketitle} command.
+        \item Use the \texttt{\textbackslash title\{\}}, \texttt{\textbackslash author\{\}}, and \texttt{\textbackslash date\{\}} commands to define the metadata.
+        \item The title commands are largely determined by the document class, but can be customized with packages
+    \end{itemize}
+\end{frame}
+\begin{frame}{Packages}
+    \begin{itemize}
+        \item Packages are used to extend the functionality of the document class.
+        \item They can be loaded in the preamble with the \texttt{\textbackslash usepackage\{\}} command.
+        \item Some packages are included by default in the document class.
+        \item Some common packages are \texttt{graphicx}, \texttt{amsmath}, \texttt{hyperref}, \texttt{babel}, \texttt{inputenc}, \texttt{fontenc}, \texttt{geometry}, \texttt{fancyhdr}, among others.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Common packages}
+    \begin{itemize}
+        \item The \texttt{geometry} package can be used to set the margins of the document.
+        \item The \texttt{setspace} package can be used to set the line spacing (single, 1.5, double).
+        \item The \texttt{lipsum} package can be used to generate dummy text. 
+    \end{itemize}
+\end{frame}
+
+\section{Math mode}
+
+\begin{frame}{Why math mode?}
+    \begin{itemize}
+        \item \LaTeX's math mode is where it truly shines.
+        \item This synthax has become a standard for typesetting math, even beyond \LaTeX.
+        \item While Microsoft Word's equation editor has come a long way, when things get complex, \LaTeX \ is the way to go
+        \begin{itemize}
+            \item Aligning equations
+            \item Repetitive notation
+            \item Lemmas, theorems, proofs
+            \item Complex symbols
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Enter Math Mode}
+    \begin{itemize}
+        \item Math mode is entered with the \texttt{\$} symbol.
+        \item Inline math mode is entered with a single \texttt{\$} symbol.
+        \item Display math mode is entered with double \texttt{\$} symbols. This will center the equation and do an automatic line break.
+    \end{itemize}
+            $$ \sum_{i=1}^{n} i = \frac{n(n+1)}{2} $$
+\end{frame}
+
+\begin{frame}{Some simple algebra}
+    \begin{itemize}
+        \item Math mode changes the font of the text to the \enquote{math font}.
+        \item To create exponents, use the \texttt{\^} symbol (\enquote{caret} or \enquote{hat}).
+        \item To create subscripts, use the \texttt{\_} symbol (\enquote{underscore}).
+        \item To create fractions, use the \texttt{\textbackslash frac\{\}\{\}} command.
+        \item To create square roots, use the \texttt{\textbackslash sqrt\{\}} command
+    \end{itemize}
+    $$ x_1^2 + y_2^2 = z_1^2 $$
+\end{frame}
+\begin{frame}{Greek letters}
+    \begin{itemize}
+        \item Greek letters can be written in math mode using their name preceded by a backslash.
+        \item You will need the \texttt{amsmath} package for some of these (the package includes the \texttt{amssymb} package).
+        \item They are case sensitive. To write the uppercase version, capitalize the first letter of the command. For example, \texttt{\textbackslash delta} for $\delta$ and \texttt{\textbackslash Delta} for $\Delta$.
+        \item Some Greek letters have variants, such as \texttt{\textbackslash varphi} and \texttt{\textbackslash phi}.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Summations and integrals}
+    \begin{itemize}
+        \item To write a summation, use the \texttt{\textbackslash sum} command.
+        \item To write an integral, use the \texttt{\textbackslash int} command.
+        \item Since these have limits, use the \texttt{\_} and \texttt{\^} symbols to denote the lower and upper limits. They are like subscripts and superscripts!
+    \end{itemize}
+    $$ \int x^2 dx = \frac{x^3}{3} + C $$
+\end{frame}
+
+\begin{frame}{Using text within math mode}
+    \begin{itemize}
+        \item If you try to write text within math mode, it will be printed in the math font.
+        \begin{itemize}
+            \item For example, $ \text{where} $ will be printed as $ where $.
+            \item Spacing and formatting will be weird
+        \end{itemize}
+        \item To write text within math mode, use the \texttt{\textbackslash text\{\}} command.
+        \item This will change the font back to the regular text font.
+        \item This is useful for writing text within equations, such as units.
+    \end{itemize}
+    $$ \ln(\text{income}) = \beta_0 + \beta_1 \text{education} + \text{other stuff} +  \epsilon $$
+\end{frame}
 \end{document}

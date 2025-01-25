@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.21)  21 JAN 2025 22:46
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.21)  25 JAN 2025 12:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -812,6 +812,22 @@ Package biblatex Info: ... and expl3
 Package: xparse 2024-02-18 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
+)) (c:/texlive/2023/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
+\csq@reset=\count468
+\csq@gtype=\count469
+\csq@glevel=\count470
+\csq@qlevel=\count471
+\csq@maxlvl=\count472
+\csq@tshold=\count473
+\csq@ltx@everypar=\toks48
+ (c:/texlive/2023/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2022-09-14 v5.2n csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+ (c:/texlive/2023/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
 )) (c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerthemeBerlin.sty (c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerouterthememiniframes.sty) (c:/texlive/2023/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty) (c:/texlive/2023/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty) (c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerinnerthemerectangles.sty)) (c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty) (c:/texlive/2023/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (c:/texlive/2023/texmf-dist/tex/latex/beamer/beamercolorthemestructure.sty) (c:/texlive/2023/texmf-dist/tex/latex/tabu/tabu.sty
 Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
  (c:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
@@ -819,23 +835,23 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \col@sep=\dimen295
 \ar@mcellbox=\box78
 \extrarowheight=\dimen296
-\NC@list=\toks48
+\NC@list=\toks49
 \extratabsurround=\skip90
 \backup@length=\skip91
 \ar@cellbox=\box79
 ) (c:/texlive/2023/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box80
-\sift@deathcycles=\count468
+\sift@deathcycles=\count474
 \@vwid@loff=\dimen297
 \@vwid@roff=\dimen298
 )
-\c@taburow=\count469
-\tabu@nbcols=\count470
-\tabu@cnt=\count471
-\tabu@Xcol=\count472
-\tabu@alloc=\count473
-\tabu@nested=\count474
+\c@taburow=\count475
+\tabu@nbcols=\count476
+\tabu@cnt=\count477
+\tabu@Xcol=\count478
+\tabu@alloc=\count479
+\tabu@nested=\count480
 \tabu@target=\dimen299
 \tabu@spreadtarget=\dimen300
 \tabu@naturalX=\dimen301
@@ -845,8 +861,8 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \abovetabulinesep=\dimen305
 \belowtabulinesep=\dimen306
 \tabustrutrule=\dimen307
-\tabu@thebody=\toks49
-\tabu@footnotes=\toks50
+\tabu@thebody=\toks50
+\tabu@footnotes=\toks51
 \tabu@box=\box81
 \tabu@arstrutbox=\box82
 \tabu@hleads=\box83
@@ -864,53 +880,51 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen315
 \cmidrulekern=\dimen316
 \defaultaddspace=\dimen317
-\@cmidla=\count475
-\@cmidlb=\count476
+\@cmidla=\count481
+\@cmidlb=\count482
 \@aboverulesep=\dimen318
 \@belowrulesep=\dimen319
-\@thisruleclass=\count477
-\@lastruleclass=\count478
+\@thisruleclass=\count483
+\@lastruleclass=\count484
 \@thisrulewidth=\dimen320
 ) (c:/texlive/2023/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip93
-\multirow@cntb=\count479
+\multirow@cntb=\count485
 \multirow@dima=\skip94
 \bigstrutjot=\dimen321
 )
-
-Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
-(biblatex)                Loading 'csquotes' recommended.
-
-\@quotelevel=\count480
-\@quotereset=\count481
-(./lecture1.aux)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'canadian'.
+ (./lecture1.aux)
 \openout1 = `lecture1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 36.
  (c:/texlive/2023/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -946,53 +960,53 @@ LaTeX Font Info:    ... okay on input line 34.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 34.
+Package hyperref Info: Link coloring OFF on input line 36.
 (./lecture1.out) (./lecture1.out)
 \@outlinefile=\write6
 \openout6 = `lecture1.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 34.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 36.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 34.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 36.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmr/m/n on input line 34.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+(Font)                  OT1/cmss/m/n --> TU/lmr/m/n on input line 36.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmss/b/n on input line 34.
+(Font)                  OT1/cmr/bx/n --> TU/lmss/b/n on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmss/b/n on input line 34.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 34.
+(Font)                  OT1/cmr/bx/n --> TU/lmss/b/n on input line 36.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 34.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/m/n on input line 34.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 34.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/m/n on input line 36.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmss/m/it on input line 34.
+(Font)                  OT1/cmr/m/it --> TU/lmss/m/it on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmss/m/it on input line 34.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 34.
+(Font)                  OT1/cmr/bx/it --> TU/lmss/m/it on input line 36.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 34.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 34.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 36.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  TU/lmss/m/n --> TU/lmss/b/n on input line 34.
+(Font)                  TU/lmss/m/n --> TU/lmss/b/n on input line 36.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  TU/lmss/m/it --> TU/lmss/b/it on input line 34.
+(Font)                  TU/lmss/m/it --> TU/lmss/b/it on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> TU/lmr/b/n on input line 34.
+(Font)                  OT1/cmss/b/n --> TU/lmr/b/n on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  TU/lmss/b/n --> TU/lmss/b/n on input line 34.
+(Font)                  TU/lmss/b/n --> TU/lmss/b/n on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  TU/lmss/m/n --> TU/lmss/b/n on input line 34.
+(Font)                  TU/lmss/m/n --> TU/lmss/b/n on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  TU/lmss/m/it --> TU/lmss/b/it on input line 34.
+(Font)                  TU/lmss/m/it --> TU/lmss/b/it on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  TU/lmtt/m/n --> TU/lmtt/b/n on input line 34.
+(Font)                  TU/lmtt/m/n --> TU/lmtt/b/n on input line 36.
  (c:/texlive/2023/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (c:/texlive/2023/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -1029,27 +1043,27 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'lecture1.bbl' found.
  (./lecture1.bbl)
-Package biblatex Info: Reference section=0 on input line 34.
-Package biblatex Info: Reference segment=0 on input line 34.
+Package biblatex Info: Reference section=0 on input line 36.
+Package biblatex Info: Reference segment=0 on input line 36.
  (./lecture1.nav)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 34.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 34.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <17.28> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 37.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 39.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <12> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 37.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 39.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 37.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 39.
  [1
 
 ] [2
@@ -1058,11 +1072,11 @@ LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
 
 ]
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 64.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 66.
  [4
 
 ]
-Overfull \vbox (4.08397pt too high) detected at line 78
+Overfull \vbox (4.08397pt too high) detected at line 80
  []
 
 [5
@@ -1078,6 +1092,41 @@ Overfull \vbox (4.08397pt too high) detected at line 78
 ] [10
 
 ] [11
+
+] [12
+
+] [13
+
+] [14
+
+] [15
+
+] [16
+
+] [17
+
+] [18
+
+] [19
+
+] [20
+
+] [21
+
+] [22
+
+] [23
+
+] [24
+
+] [25
+
+] [26
+
+]
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 302.
+ [27
 
 ]
 \tf@nav=\write7
@@ -1095,18 +1144,18 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-18>
  ***********
 Package rerunfilecheck Info: File `lecture1.out' has not changed.
-(rerunfilecheck)             Checksum: BF4D87292B887E85A12EC773645AD8AC;270.
+(rerunfilecheck)             Checksum: 83E1C8E21FC13EED4C298B019DC588F0;361.
 Package logreq Info: Writing requests to 'lecture1.run.xml'.
 \openout1 = `lecture1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30662 strings out of 474806
- 598261 string characters out of 5762493
- 1931662 words of memory out of 5000000
- 52194 multiletter control sequences out of 15000+600000
- 566430 words of font info for 85 fonts, out of 8000000 for 9000
+ 31285 strings out of 474806
+ 608712 string characters out of 5762493
+ 1932662 words of memory out of 5000000
+ 52808 multiletter control sequences out of 15000+600000
+ 567991 words of font info for 92 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,19n,123p,738b,3926s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on lecture1.pdf (11 pages).
+Output written on lecture1.pdf (27 pages).
