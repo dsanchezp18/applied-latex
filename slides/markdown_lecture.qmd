@@ -1,0 +1,30 @@
+---
+title: Applied \LaTeX and Markdown for Researchers
+institute: Laboratorio de Investigación para el Desarrollo del Ecuador
+author: Daniel Sánchez Pazmiño, MA
+date: 2025-02-01
+theme: berlin
+date-format: "MMMM YYYY"
+format: beamer
+incremental: false
+fig-align: center
+fontsize: 10pt
+include-in-header:
+    - text: |
+        \setbeamercolor{background canvas}{bg=white}
+        \setbeamertemplate{caption}[numbered]
+        \usecolortheme[named=black]{structure}
+        \usepackage{tikz}
+        \usepackage{pgfplots}
+knitr:
+    opts_chunk: 
+      echo: true
+      message: false
+      warning: false
+---
+
+# Markdown
+
+## Markdown
+
+- Markdown is a lightweight markup language with plain text formatting syntax.
