@@ -1,5 +1,5 @@
 ---
-title: Applied \LaTeX \ and Markdown for Researchers
+title: Applied Markdown for Researchers
 institute: Laboratorio de Investigación para el Desarrollo del Ecuador
 author: Daniel Sánchez Pazmiño, MA
 date: 2025-02-01
@@ -57,6 +57,7 @@ knitr:
     - And more!
 
 - You can consult the [Markdown Guide](https://www.markdownguide.org/) for more information
+    - Also the [Coding for Economists](https://aeturrell.github.io/coding-for-economists/wrkflow-markdown.html) markdown guide
 
 ## Markdown flavours
 
@@ -74,8 +75,11 @@ knitr:
     - Task lists
     - And more!
 
-- The most common is GFM, which is what we'll be using today
+- The most common is GFM
     - See the [GitHub Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet) for more info
+    
+- Variations are very small, today we're using Pandoc Markdown
+    - See the Quarto documentation [here](https://quarto.org/docs/authoring/markdown-basics.html)
 
 ## Compilation of Markdown
 
@@ -86,3 +90,161 @@ knitr:
 
 - But know that Markdown can be used and compiled without any major software
     - Use VS Code (with the Markdown Preview Enhanced and Markdown All in One extensions)
+    - Online, you may use [Dillinger](https://dillinger.io/)
+
+## Tables in Markdown
+
+- Tables in Markdown are created using pipes `|` and hyphens `-`
+    - The first row is the header row
+    - The second row is the separator row
+    - The rest of the rows are the data rows
+
+- Example:
+
+```
+| Header 1 | Header 2 | Header 3 |
+|----------|----------|----------|
+| Data 1   | Data 2   | Data 3   |
+| Data 4   | Data 5   | Data 6   |
+```
+
+- Renders as:
+
+| Header 1 | Header 2 | Header 3 |
+|----------|----------|----------|
+| Data 1   | Data 2   | Data 3   |
+| Data 4   | Data 5   | Data 6   |
+
+## Tables in Markdown
+
+- While less clunky than \LaTeX \ tables, they may be less flexible, depending on the ```python
+
+- This is since the focus is on readibility and simplicity
+
+- However, when trying to make complex tables, no one expects anyone to manually write them in Markdown
+
+- Use [Markdown tables generator](https://www.tablesgenerator.com/markdown_tables#google_vignette) or similar tools to generate tables
+
+- We will later discuss how to export tables from statistical software to Markdown
+
+## Code: inline and blocks
+
+- As mentioned before, since Markdown is heavily oriented to software documentation, a big thing about it is how we write code within it
+
+- Inline code is written using backticks ``` ` ```
+
+- Code blocks are written using triple backticks ``` ``` ```
+
+- Example:
+
+```
+This is an inline code: `print("Hello, world!")`
+
+```
+
+## Code: inline and blocks
+
+- This is a code block:
+
+```r
+
+print("Hello, world!")
+
+```
+
+- Code blocks should include the name of the language for syntax highlighting. Eg. ` ```r ` for R code or ` ```python ` for Python code
+    - Unfortunately Stata is not supported by default. 
+
+## Divs and spans in Markdown
+
+- Divs and spans are used to apply CSS styles to Markdown elements
+
+- Divs are something coming from HTML, and are used to apply styles to blocks of text
+
+- We will typically not need this unless you're deep in the weeds of web development
+    - Typically academic documents can be styled with \LaTeX
+
+- However, a div in Quarto is often useful for defining images and table environments
+    - Same idea as in \LaTeX
+
+## Divs in Markdown
+
+- Example of a div in Quarto:
+
+```markdown
+
+::: {.myclass}
+
+This is a div
+
+:::
+
+```
+## Divs in Markdown
+
+- For a table in Quarto, which includes a caption:
+
+```markdown
+
+::: {#tbl-panel layout-ncol=2}
+| Col1 | Col2 | Col3 |
+|------|------|------|
+| A    | B    | C    |
+| E    | F    | G    |
+| A    | G    | G    |
+
+: First Table {#tbl-first}
+
+| Col1 | Col2 | Col3 |
+|------|------|------|
+| A    | B    | C    |
+| E    | F    | G    |
+| A    | G    | G    |
+
+: Second Table {#tbl-second}
+
+Main Caption
+:::
+
+See @tbl-panel for details, especially @tbl-second.
+
+```
+
+# \LaTeX \ in Markdown
+
+## \LaTeX \ in Markdown
+
+- While the most basic of Markdown may not support \LaTeX, using it in VS Code or RMarkdown is very easy
+
+- You can simply write \LaTeX \ code within Markdown
+
+- For example, to write an equation in Markdown:
+
+```markdown
+
+This is an equation: $y = \beta_0 + \beta_1 x$
+
+```
+
+- This renders as:
+
+This is an equation: $y = \beta_0 + \beta_1 x$
+
+## \LaTeX \ in Markdown
+
+- We typically will not be able to use \LaTeX \ packages in Markdown
+
+- This is because Markdown is not a programming language, and does not have the same functionality as \LaTeX
+
+- Unless we're in Quarto and outputting to PDF, we will not be able to use \LaTeX \ packages
+
+- In the latter case, we can use \LaTeX \ packages in the YAML header
+
+```yaml
+
+output:
+  pdf_document:
+    includes:
+      in_header: header.tex
+
+```
