@@ -248,3 +248,67 @@ output:
       in_header: header.tex
 
 ```
+
+# RMarkdown and Quarto
+
+## RMarkdown and Quarto
+
+- RMarkdown is probably the most common way to be introduced to Markdown for researchers
+
+- It allows to create dynamic documents, mixing Markdown with R code
+
+- Quarto is a newer tool that allows for more flexibility and customization, plus works seamlessly with other languages
+
+## RMarkdown and Quarto
+
+- We've spoken about these tools before in our R module
+
+- Posit Co.'s guide to Quarto, [here](https://quarto.org/docs/dashboards/)
+
+- We will focus on how to make documents different to the ones we've seen before
+
+## Quarto for presentations
+
+- Quarto can be used to create presentations, like the one you're seeing now
+
+- This is done by using the `beamer` format in the YAML header
+  - Alternatively, you can use `revealjs` for a more modern look
+  - Can also output to powerpoint, with less flexibility but more compatibility
+
+## Quarto for presentations
+
+- The YAML header for a presentation in Quarto looks like this:
+
+```yaml
+
+---
+title: Applied Markdown for Researchers
+institute: Laboratorio de Investigación para el Desarrollo del Ecuador
+author: Daniel Sánchez Pazmiño, MA
+date: 2025-02-01
+theme: berlin # or any other theme
+format: beamer # this is the format of \LaTeX \ beamer
+incremental: false # this is for incremental slides
+---
+
+```
+
+## Quarto for presentations
+
+- The rest of the document is written in Markdown
+
+- To create new slides in Quarto, you use `---` to separate slides
+  - Alternatively, create a new slide with `##` or `#`
+  
+- The "incremental" option in the YAML header allows for incremental slides
+  - This means that bullet points will appear one by one
+
+## Using Quarto templates
+
+- As of today, Quarto can create books, websites, dashboards, and many other things
+
+- RStudio has templates for these, which can be very easily accessed
+
+- VS Code can also use Quarto templates using the Command Palette (Ctrl + Shift + P)
+
+- You can always consult the Quarto documentation for more information
