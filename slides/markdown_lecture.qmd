@@ -1,5 +1,5 @@
 ---
-title: Applied \LaTeX and Markdown for Researchers
+title: Applied \LaTeX \ and Markdown for Researchers
 institute: Laboratorio de Investigación para el Desarrollo del Ecuador
 author: Daniel Sánchez Pazmiño, MA
 date: 2025-02-01
@@ -27,4 +27,62 @@ knitr:
 
 ## Markdown
 
-- Markdown is a lightweight markup language with plain text formatting syntax.
+- Markdown is a _lightweight markup language_
+    - Means that, unlike \LaTeX or html \ it is not a programming language
+    - Overall, known for its simplicity and readability, both in its raw form and rendered form
+
+- Markdown is widely used in coding-related applications, such as:
+    - GitHub
+    - Jupyter Notebooks/Google Colab
+    - R Markdown/Quarto
+    - Stack Overflow
+    - Slack
+    - Notion/Obsidian
+    - Reddit!
+
+## Markdown Syntax
+
+- We've already talked about some basic Markdown syntax:
+    - Headers use `#`
+    - Lists use `-` or `1.`
+    - Emphasis uses `*` or `_`
+    - Links use `[text](url)`
+
+- There are many more elements in Markdown, such as:
+    - Images
+    - Tables
+    - Blockquotes
+    - Code blocks
+    - Footnotes
+    - And more!
+
+- You can consult the [Markdown Guide](https://www.markdownguide.org/) for more information
+
+## Markdown flavours
+
+- Markdown has "flavours" or "dialects" that add extra functionality
+    - GitHub Flavored Markdown (GFM)
+    - CommonMark
+    - Pandoc Markdown
+    - Markdown Extra
+    - And more!
+
+- These flavours add extra functionality, such as:
+    - Tables
+    - Footnotes
+    - Strikethrough
+    - Task lists
+    - And more!
+
+- The most common is GFM, which is what we'll be using today
+    - See the [GitHub Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet) for more info
+
+## Compilation of Markdown
+
+- In RMarkdown and Quarto, Markdown text is compiled through Pandoc
+    - Pandoc is a universal document converter
+    
+- We do not need to understand much about the internal workings of Pandoc
+
+- But know that Markdown can be used and compiled without any major software
+    - Use VS Code (with the Markdown Preview Enhanced and Markdown All in One extensions)
