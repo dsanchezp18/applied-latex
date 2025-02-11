@@ -1,0 +1,251 @@
+---
+title: Applied \LaTeX \ for Researchers
+institute: Laboratorio de Investigación para el Desarrollo del Ecuador
+author: Daniel Sánchez Pazmiño, MA
+date: 2025-02-01
+theme: berlin
+date-format: "MMMM YYYY"
+format: beamer
+incremental: false
+fig-align: center
+fontsize: 10pt
+include-in-header:
+    - text: |
+        \setbeamercolor{background canvas}{bg=white}
+        \setbeamertemplate{caption}[numbered]
+        \usecolortheme[named=black]{structure}
+        \usepackage{tikz}
+        \usepackage{pgfplots}
+knitr:
+    opts_chunk: 
+      echo: true
+      message: false
+      warning: false
+---
+
+# Math Mode Revisited
+
+## Math Mode Revisited
+
+- Math mode is arguably \LaTeX's most powerful feature
+  - However, its syntax often takes some time to master
+  
+- Fortunately, tools have been developed to help users write \LaTeX \ code more easily
+
+- In this section, we will explore some of these tools
+
+## Using AI
+
+- Never ignore AI in your workflows
+    - AI will not replace you, someone who knows how to use it will
+
+- ChatGPT can help you with any sort of text generation or syntax question
+  - Ask it to generate an equation in \LaTeX \ for you
+  - Alternatively, you may feed it a picture of an equation and ask it to generate the \LaTeX \ code for you
+  
+- Writefull AI is Overleaf's own AI assistant
+  - Cheaper than ChatGPT, but still not free
+
+- Check out [There's an AI for That](https://www.theresanaiforthat.com/) for more AI tools
+  - A quick search yields several other tools, such as LaText AI.
+
+## Codecogs
+
+- [Codecogs](https://editor.codecogs.com/) is a free online \LaTeX \ equation editor
+  
+- Following a more "click and drag" approach, it is a good tool for beginners
+  - Much like Overleaf's equation editor, you can click on symbols to add them to your equation
+  - It also has a "Copy to Clipboard" button, which makes it easy to paste the equation into your document
+
+## Mathpix
+
+- Mathpix is one of the best tools for converting images of equations into \LaTeX \ code
+  
+- Available as a desktop app, you can take a screenshot of an equation and Mathpix will convert it into \LaTeX \ code
+  - It also has a mobile app, which is useful for taking pictures of equations in textbooks
+
+- Without spending any money, it will allow you to convert a limited number of equations per month
+  - However, the paid version is not expensive
+  
+## Word Equations
+
+- If for any reason you need to write a Word document with complex equations, you can actually write the equations in \LaTeX \ and then convert them to Word format
+
+- This will require you to turn on the "LaTeX" option in the Equation tab, rather than the "Unicode" option.
+
+# Creating Bibliographies
+
+## Creating Bibliographies
+
+- The bibliography or reference list is a crucial part of any academic paper.
+
+- In \LaTeX, you can create a bibliography using several different packages
+  - `natbib`, `biblatex`, and `apacite` are some of the most popular
+  - Each package has its own syntax and features
+
+- In this section, we will focus on `biblatex`, which is the most modern and flexible of the three
+  - The workflow is similar to referencing in Quarto/RMarkdown
+  
+## Where to store your bibliography
+
+- You can create a bibliography in \LaTeX on your own, but it is much easier to use a reference manager
+  - Zotero, Mendeley, and EndNote are some of the most popular reference managers
+
+- Zotero is free and open-source, and it has a plugin for Word and LibreOffice
+  - It also has a plugin for Google Docs, which is useful for collaborative writing
+  - Here, we will focus on Zotero
+
+- You can add references to Zotero using the Chrome add-on, or by manually entering them
+  
+## Loading the package into \LaTeX
+
+- To use `biblatex`, you need to load the package in the preamble of your document
+  - You also need to specify the style of the bibliography
+  - The most common styles are `apa`, `mla`, and `chicago`
+
+- A very good guide on citation is on the Overleaf website
+  - [Bibliography management in LaTeX](https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX)
+  - [Bibliography management with biblatex](https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex)
+
+## Adding the bibliography package `biblatex`
+
+```latex
+\usepackage[style=apa]{biblatex}
+```
+
+- The `style` option specifies the style of the bibliography
+  - The `apa` style is based on the American Psychological Association's citation style
+  - You can find a list of all the available styles in the `biblatex` documentation
+- You also need to specify the `.bib` file that contains your references
+
+## The `.bib` file
+
+- The `.bib` file is a plain text file that contains all the references you want to include in your bibliography
+  - Each reference is stored in a separate entry
+  - The format of the entries is specified by the `biblatex` package
+- 
+- It follows a \LaTeX-like syntax, with each entry starting with an `@` symbol
+  - The type of the entry is specified after the `@` symbol
+  - The fields of the entry are enclosed in curly braces `{}`
+
+- Don't try to write the `.bib` file by hand!
+  - Zotero can export your references to a `.bib` file
+  - You only need to put it in the same folder as your `.tex` file or upload it to Overleaf
+
+## The `.bib` file
+
+```latex
+@article{einstein,
+  author = {Albert Einstein},
+  title = {Zur Elektrodynamik bewegter K{\"o}rper},
+  journal = {Annalen der Physik},
+  volume = {322},
+  number = {10},
+  pages = {891--921},
+  year = {1905},
+  publisher = {Wiley-VCH},
+  doi = {10.1002/andp.200510497}
+}
+```
+
+## Adding the bibliography file
+
+```latex
+\addbibresource{references.bib}
+```
+
+- The `\addbibresource` command specifies the `.bib` file that contains your references
+  - You need to put the `.bib` file in the same folder as your `.tex` file or upload it to Overleaf
+  - The file extension `.bib` is optional
+- You can add multiple `.bib` files to your document
+  - Just use the `\addbibresource` command multiple times
+- The `\printbibliography` command prints the bibliography in your document
+
+## Adding the bibliography
+
+```latex
+\printbibliography
+```
+
+- The `\printbibliography` command prints the bibliography in your document
+  - You can specify the title of the bibliography by passing an argument to the command
+  - You can also filter the bibliography by passing options to the command
+  - The options are specified in square brackets `[]`
+
+## Citation commands
+
+- To include a citation in your document, you need to use the `\cite` command
+  - The `\cite` command takes the key of the reference you want to cite as an argument
+  - You can cite multiple references by separating the keys with commas
+  - The `\cite` command prints the citation in the text and adds the reference to the bibliography
+
+## Citation commands
+
+```latex
+\cite{einstein}
+```
+
+- The `\cite` command takes the key of the reference you want to cite as an argument
+  - You can cite multiple references by separating the keys with commas
+  - The `\cite` command prints the citation in the text and adds the reference to the bibliography
+- The `\textcite` command is similar to the `\cite` command, but it prints the author's name in the text
+- The `\parencite` command is similar to the `\cite` command, but it adds parentheses around the citation
+
+## Citation commands
+
+```latex
+\textcite{einstein} showed that \ldots 
+
+\parencite{einstein}
+
+\cite{einstein}
+
+\cite{einstein,dirac}
+
+\cite{einstein,dirac,bohr}
+```
+
+# Exporting from statistical software to \LaTeX
+
+## Exporting from statistical software to \LaTeX
+
+- If you are using statistical software to analyze your data, you can export the results to \LaTeX
+  - This is useful if you want to include tables, figures, or other output in your document
+  - Most statistical software packages have built-in support for exporting to \LaTeX
+
+- Here, we will focus on how to export tables from R and Stata to \LaTeX
+  - Both have packages that make it relatively easy to export tables to \LaTeX
+
+## The export environment in R
+
+- Many options exist for exporting tables from R to \LaTeX
+  - `stargazer` is likely the most known package for exporting tables to \LaTeX
+  - However, `modelsummary` is a more modern and flexible package
+
+- Other packages, such as `kableExtra`, `xtable`, and `huxtable`, can also be used to export tables to \LaTeX
+  - `kableExtra` is particularly useful for creating complex tables with formatting
+
+## An example with `stargazer`
+
+- We export the `mtcars` dataset to a \LaTeX \ table using `stargazer`
+
+```{r}
+#| label: stargazer
+#| echo: true
+#| eval: false
+library(stargazer)
+
+data(mtcars)
+
+stargazer(mtcars, 
+          type = "latex",
+          summary = T,
+          title = "Descriptive Statistics")
+
+```
+
+# Knitr/Sweave
+
+## Final Comments
+
+<!-- debugging -->
