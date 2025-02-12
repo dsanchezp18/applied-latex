@@ -1,0 +1,21 @@
+	(1)	(2)
+	model1	model2
+VARIABLES	bpsystol	bpsystol
+		
+age	0.638***	0.638***
+	(0.0111)	(0.0111)
+weight	0.407***	0.407***
+	(0.0125)	(0.0125)
+2.region	-0.240	
+	(0.564)	
+3.region	-0.619	
+	(0.560)	
+4.region	-0.862	
+	(0.570)	
+Constant	71.71***	71.27***
+	(1.108)	(1.042)
+		
+Observations	10,351	10,351
+R-squared	0.303	0.303
+Standard errors in parentheses		
+*** p<0.01, ** p<0.05, * p<0.1		

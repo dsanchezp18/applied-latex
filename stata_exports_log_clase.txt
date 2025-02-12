@@ -1,0 +1,116 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\user\Documents\GitHub\applied-latex\stata_exports_log_clase.txt
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}11 Feb 2025, 21:20:02
+{txt}
+{com}. 
+. 
+. ** Regressions ---------------------------------------------
+. 
+. * use a random dataset
+. 
+. webuse nhanes2l
+{txt}(Second National Health and Nutrition Examination Survey)
+
+{com}. 
+. quietly regress bpsystol age weight i.region // quietly does not give output
+{txt}
+{com}. 
+. estimates store model1
+{txt}
+{com}. 
+. etable, estimates(model1) showstars showstarsnote title("Tabla Regresion") export ("outputs/word_doc_stata_export.docx", replace)
+{res}
+{smcl}
+{reset}{...}
+{p}Tabla Regresion{p_end}
+{hline 22}{c -}{hline 7}{c -}{hline 2}
+{space 22} {space 1}bpsystol{space 1}
+{hline 22}{c -}{hline 7}{c -}{hline 2}
+Age (years){space 11} {space 2}{result:0.638} {result:**}
+{space 22} {result:(0.011)} {space 2}
+Weight (kg){space 11} {space 2}{result:0.407} {result:**}
+{space 22} {result:(0.012)} {space 2}
+Region{space 16} {space 7} {space 2}
+  MW{space 18} {space 1}{result:-0.240} {space 2}
+{space 22} {result:(0.564)} {space 2}
+  S{space 19} {space 1}{result:-0.619} {space 2}
+{space 22} {result:(0.560)} {space 2}
+  W{space 19} {space 1}{result:-0.862} {space 2}
+{space 22} {result:(0.570)} {space 2}
+Intercept{space 13} {space 1}{result:71.708} {result:**}
+{space 22} {result:(1.108)} {space 2}
+Number of observations {space 2}{result:10351} {space 2}
+{hline 22}{c -}{hline 7}{c -}{hline 2}
+{p}** p<.01, * p<.05{p_end}
+{res}{txt}{p 0 1 2}
+(collection {res:ETable} exported to file {browse "C:/Users/user/Documents/GitHub/applied-latex/outputs/word_doc_stata_export.docx":outputs/word_doc_stata_export.docx})
+{p_end}
+
+{com}. 
+. * now, using outreg2 
+. 
+. * ssc install outreg2 if u havent done so 
+. 
+. outreg2 using "outputs/word_doc_stata_export.docx", replace
+{txt}{stata `"shellout using `"outputs/word_doc_stata_export.docx"'"':outputs/word_doc_stata_export.docx}
+{browse `"C:\Users\user\Documents\GitHub\applied-latex"' :dir}{com} : {txt}{stata `"seeout using "outputs/word_doc_stata_export.txt""':seeout}
+
+{com}. 
+. * with multiple models
+. 
+. quietly regress bpsystol age weight // quietly does not give output
+{txt}
+{com}. 
+. estimates store model2
+{txt}
+{com}. 
+. outreg2 [model1 model2] "outputs/word_doc_stata_export.docx", replace
+  outreg2 [model1 model2] outputs/word_doc_stata_export.docx using `"outputs/word_doc_stata_export.docx"', replace
+{txt}{stata `"shellout using `"outputs/word_doc_stata_export.docx"'"':outputs/word_doc_stata_export.docx}
+{browse `"C:\Users\user\Documents\GitHub\applied-latex"' :dir}{com} : {txt}{stata `"seeout using "outputs/word_doc_stata_export.txt""':seeout}
+
+{com}. 
+. * with latex
+. 
+. outreg2 [model1 model2] using "outputs/latex_stata_export.tex", replace 
+{txt}{stata `"shellout using `"outputs/latex_stata_export.tex"'"':outputs/latex_stata_export.tex}
+{browse `"C:\Users\user\Documents\GitHub\applied-latex"' :dir}{com} : {txt}{stata `"seeout using "outputs/latex_stata_export.txt""':seeout}
+
+{com}. 
+. * now with esttout
+. 
+. * ssc install esttout if u havent done so before. 
+. 
+. 
+. // Export both models to LaTeX
+. esttab model1 model2 using "outputs/latex_stata_export.tex", replace ///
+> title("Tabla Regresion") b(%9.3f) se star booktabs
+{res}{txt}(output written to {browse  `"outputs/latex_stata_export.tex"'})
+
+{com}. 
+. esttab model1 model2 using "outputs/word_stata_export.docx", replace 
+{res}{txt}(output written to {browse  `"outputs/word_stata_export.docx"'})
+
+{com}. 
+. esttab model1 model2 using "outputs/excel_stata_export.xlsx", replace ///
+> 
+{res}{txt}{p 0 4 2}
+(file {bf}
+outputs/excel_stata_export.xlsx{rm}
+not found)
+{p_end}
+(output written to {browse  `"outputs/excel_stata_export.xlsx"'})
+
+{com}. ** Finalize -------------------------------------
+. 
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\user\Documents\GitHub\applied-latex\stata_exports_log_clase.txt
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}11 Feb 2025, 21:20:03
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

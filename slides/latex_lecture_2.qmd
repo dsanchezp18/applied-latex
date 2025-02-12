@@ -362,10 +362,6 @@ Among other things, `modelsummary` can:
 - After careful study and comparison, we suggest the best method may be to export to Excel, then use the Excel2LaTeX add-in to convert the table to LaTeX
   - Packages include `estout` and `outreg2`, but other methods available. 
 
-## Using `estout`
-
-
-
 <!-- # Knitr/Sweave
  -->
 
