@@ -216,7 +216,9 @@ knitr:
 - Here, we will focus on how to export tables from R and Stata to \LaTeX
   - Both have packages that make it relatively easy to export tables to \LaTeX
 
-## The export environment in R
+# The export environment in R
+
+## Exporting tables from R
 
 - Many options exist for exporting tables from R to \LaTeX
   - `stargazer` is likely the most known package for exporting tables to \LaTeX
@@ -241,11 +243,132 @@ stargazer(mtcars,
           type = "latex",
           summary = T,
           title = "Descriptive Statistics")
+```
+
+## `modelsummary`
+
+- `modelsummary` is a more modern and flexible package for exporting tables to \LaTeX
+  - It is particularly useful for exporting regression tables
+  - Exports to a larger amount of formats, including HTML, Word, and Markdown
+  - It is also more flexible than `stargazer`
+  - Can do summary statistics with `datasummary`
+
+- Check the author's [GitHub page](https://vincentarelbundock.github.io/modelsummary/) for more information
+  - Includes awesome vignettes and documentation!
+
+## `modelsummary::datasummary`
+
+- `datasummary` has a wide range of possibilities, you can see the vignettes [here](https://modelsummary.com/vignettes/datasummary.html).
+  - `datasummary_skim` produces quick summary statistics
+  - `datasummary_balance` specifically works for "balance tables"
+  - `datasummary` is the most general function, and it can be used for a wide range of tables
+
+## An example with `modelsummary::datasummary_skim`
+
+```{r}
+#| label: datasummary_skim
+
+library(modelsummary)
+
+datasummary_skim(mtcars)
 
 ```
 
-# Knitr/Sweave
+## The formula syntax in `datasummary`
 
-## Final Comments
+- `datasummary` requires a formula (like that in `lm`) to work
+  - This allows for amazing flexibility
 
+- For instance, if we want to report the mean of `mpg`, we can use the following formula: `mpg ~ Mean`
+  - Mean is the special `mean` function in `datasummary`, which is just `mean(x, na.rm = TRUE)`
+  - Others available are `Median`, `SD`, `N`, among others
+
+- To do more statistics, sum them to the LHS of the formula
+  - to add groups, use the nesting operator `*` in the RHS of the formula
+
+## An example with `modelsummary::datasummary`
+
+```{r}
+#| label: datasummary
+
+data(mtcars)
+
+datasummary(mpg ~ Mean, data = mtcars)
+```
+
+## An example with `modelsummary::datasummary`
+
+```{r}
+#| label: datasummary_grouped
+
+datasummary(mpg ~ as.factor(cyl)*(Mean + SD + N), data = mtcars)
+
+```
+
+## Regression tables with `modelsummary`
+
+- `modelsummary` is particularly useful for exporting regression tables to \LaTeX
+  - It can export tables from `lm`, `glm`, `feols` and many other packages for modelling
+
+- It is very customizable, and you can add custom statistics, change the formatting, and add notes to the table
+
+- Check the function's [GitHub page](https://modelsummary.com/vignettes/modelsummary.html) for more information
+
+## An example with `modelsummary`
+
+```{r}
+#| label: modelsummary1
+#| results: false
+
+data(mtcars)
+
+model <- lm(mpg ~ wt + hp, data = mtcars)
+
+modelsummary(model)
+
+```
+
+## An example with `modelsummary`
+
+```{r}
+#| label: modelsummary2
+#| results: asis
+#| echo: false
+
+data(mtcars)
+model <- lm(mpg ~ wt + hp, data = mtcars)
+modelsummary(model)
+```
+
+## `modelsummary` functionality
+
+Among other things, `modelsummary` can:
+
+- Add a custom covariance matrix (adjust the standard errors)
+- Add custom statistics (goodness of fit, for instance)
+- Change the shape of the table
+- Add notes to the table
+- Change the formatting of the table (e.g. rounding)
+- Titles, subtitles, exponentiation of coefficients, etc. 
+- Name titles
+- Exporting to HTML, Word, Markdown, and other formats
+
+# The Export Environment in Stata
+
+## Exporting tables from Stata
+
+- Stata can export to multiple formats, including Excel, LaTeX and Word
+
+- After careful study and comparison, we suggest the best method may be to export to Excel, then use the Excel2LaTeX add-in to convert the table to LaTeX
+  - Packages include `estout` and `outreg2`, but other methods available. 
+
+## Using `estout`
+
+
+
+<!-- # Knitr/Sweave
+ -->
+
+<!-- ## Final Comments
+ -->
 <!-- debugging -->
