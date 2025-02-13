@@ -1,0 +1,90 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath} % para el comando gathered y otros comandos matematicos. 
+\usepackage[style = apa]{biblatex}
+    \addbibresource{archivo_refs_ejemplo.bib}
+\usepackage[spanish]{babel}
+
+\usepackage{lipsum} % DUMMY TEXT
+\usepackage{csquotes} % para comillas
+
+\title{Clase 3}
+\author{Daniel Sánchez}
+\date{February 2025}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+$ \int x^{2} dx $
+
+\begin{equation}
+\begin{gathered}
+\frac{\partial f(\alpha, \beta)}{\partial \alpha}=0 \\
+\frac{\partial \sum_{i=1}^n\left(Y_i-\alpha-\beta X_i\right)^2}{\partial \alpha}=0 \\
+-2 \sum_{i=1}^n\left(Y_i-\widehat{\alpha}-\widehat{\beta} X_i\right)=0 \\
+\sum_{i=1}^n\left(Y_i-\widehat{\alpha}-\hat{\beta} X_i\right)=0
+\end{gathered}
+\end{equation}
+
+\section{Aprendiendo a citar con biblatex}
+
+De acuerdo con \cite{bosch_schady19}. La regresion dio un resultado de 10 \parencite{bosch_schady19}. 
+
+De acuerdo con \textcite{adao_etal22}.
+
+\begin{enumerate}
+    \item \texttt{cite} hace citas SIN parentesis
+    \item \texttt{parencite} hace citas CON parentesis
+    \item \texttt{textcite} hace citas con autor y anio entre parentesis
+\end{enumerate}
+
+Citas "especiales":
+
+\parencite*{carrillo_etal23} (solo cita el anio). 
+
+Para agregar un numero de pagina, utilizamos un argumento opcional entre corchetes.
+
+\parencite[p. 10]{carrillo_etal23}.
+
+Citas textuales (entre comillas) de mas de 40 palabras deben hacerse en bloque. A continuacion:
+
+\section{Block Quote}
+
+\begin{blockquote}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+\end{blockquote}
+
+\section{Tablas}
+
+% Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
+% Date and time: Wed, Feb 12, 2025 - 18:57:52
+\begin{table}[!htbp] \centering 
+  \caption{Estadistica Descriptiva de Mtcars} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max} \\ 
+\hline \\[-1.8ex] 
+mpg & 32 & 20.091 & 6.027 & 10.400 & 33.900 \\ 
+cyl & 32 & 6.188 & 1.786 & 4 & 8 \\ 
+disp & 32 & 230.722 & 123.939 & 71.100 & 472.000 \\ 
+hp & 32 & 146.688 & 68.563 & 52 & 335 \\ 
+drat & 32 & 3.597 & 0.535 & 2.760 & 4.930 \\ 
+wt & 32 & 3.217 & 0.978 & 1.513 & 5.424 \\ 
+qsec & 32 & 17.849 & 1.787 & 14.500 & 22.900 \\ 
+vs & 32 & 0.438 & 0.504 & 0 & 1 \\ 
+am & 32 & 0.406 & 0.499 & 0 & 1 \\ 
+gear & 32 & 3.688 & 0.738 & 3 & 5 \\ 
+carb & 32 & 2.812 & 1.615 & 1 & 8 \\ 
+\hline \\[-1.8ex] 
+\end{tabular}
+\end{table}
+
+
+\printbibliography
+
+\end{document}
