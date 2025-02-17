@@ -17,12 +17,21 @@ cd "C:\Users\user\Documents\GitHub\applied-latex"
 
 log using stata_exports_log_clase.txt, replace
 
-
-** Regressions ---------------------------------------------
-
 * use a random dataset
 
 webuse nhanes2l
+
+*** Descriptive statistics --------------------------------
+
+dtable age weight // does not export
+
+dtable age weight, by(region) // cool group by statistics
+
+dtable age weight, by(region) export("outputs/table_by_region_stata_export.docx")
+
+summarize age // cannot be exported unless you do a lengthy workflow with collect export.
+
+** Regressions ---------------------------------------------
 
 quietly regress bpsystol age weight i.region // quietly does not give output
 
@@ -52,14 +61,11 @@ outreg2 [model1 model2] using "outputs/latex_stata_export.tex", replace
 
 * ssc install esttout if u havent done so before. 
 
-
 // Export both models to LaTeX
 esttab model1 model2 using "outputs/latex_stata_export.tex", replace ///
 title("Tabla Regresion") b(%9.3f) se star booktabs
 
 esttab model1 model2 using "outputs/word_stata_export.docx", replace 
-
-
 
 ** Finalize -------------------------------------
 

@@ -23,6 +23,14 @@ knitr:
       warning: false
 ---
 
+```{r}
+#| label: setup
+library(tidyverse)
+library(modelsummary)
+library(knitr)
+library(kableExtra)
+```
+
 # Math Mode Revisited
 
 ## Math Mode Revisited
@@ -226,6 +234,8 @@ knitr:
 
 - Other packages, such as `kableExtra`, `xtable`, and `huxtable`, can also be used to export tables to \LaTeX
   - `kableExtra` is particularly useful for creating complex tables with formatting
+  - `gt` is another great package for creating tables in R
+  - `flextable` is particularly useful for Word documents (we covered it in our RMarkdown lecture)
 
 ## An example with `stargazer`
 
@@ -263,15 +273,27 @@ stargazer(mtcars,
   - `datasummary_balance` specifically works for "balance tables"
   - `datasummary` is the most general function, and it can be used for a wide range of tables
 
-## An example with `modelsummary::datasummary_skim`
+## An example with `modelsummary::datasummary_skim` 
 
 ```{r}
 #| label: datasummary_skim
-
+#| results: false
 library(modelsummary)
+data(mtcars)
+
+# skim datasummary of all variables in mtcars, non-numeric variables are ignored
 
 datasummary_skim(mtcars)
+```
 
+## An example with `modelsummary::datasummary_skim`
+
+```{r}
+#| label: datasummary_skim_display
+#| echo: false
+#| results: asis
+library(modelsummary)
+datasummary_skim(mtcars |> select(-cyl, -vs, -am, -gear, -carb))
 ```
 
 ## The formula syntax in `datasummary`
@@ -319,13 +341,9 @@ datasummary(mpg ~ as.factor(cyl)*(Mean + SD + N), data = mtcars)
 ```{r}
 #| label: modelsummary1
 #| results: false
-
 data(mtcars)
-
 model <- lm(mpg ~ wt + hp, data = mtcars)
-
 modelsummary(model)
-
 ```
 
 ## An example with `modelsummary`
@@ -334,10 +352,9 @@ modelsummary(model)
 #| label: modelsummary2
 #| results: asis
 #| echo: false
-
 data(mtcars)
 model <- lm(mpg ~ wt + hp, data = mtcars)
-modelsummary(model)
+modelsummary(model, gof_omit = "BIC|AIC|IC")
 ```
 
 ## `modelsummary` functionality
@@ -358,9 +375,113 @@ Among other things, `modelsummary` can:
 ## Exporting tables from Stata
 
 - Stata can export to multiple formats, including Excel, LaTeX and Word
+  - Its output copies easily to Word and Excel (more than R)
 
-- After careful study and comparison, we suggest the best method may be to export to Excel, then use the Excel2LaTeX add-in to convert the table to LaTeX
-  - Packages include `estout` and `outreg2`, but other methods available. 
+- For descriptive statistics, Stata 18's `dtable` command is particularly useful
+  - It can export tables to LaTeX, Word, and Excel
+  - It is very customizable, and you can add custom statistics, change the formatting, and add notes to the table
+  - As an alternative, you can use the `estout` package
+  
+- Among other methods, the `outreg2` and `esttab` commands are also useful for exporting regression tables to LaTeX.
+  - It is also easy to export to Excel by copying and pasting and then using the Excel2LateX add-in. 
+
+- Check `Stata\LaTex` [workflows](https://lukestein.github.io/stata-latex-workflows/) for more info.
+
+## Descriptive statistics: `dtable`
+
+- `dtable` is a new command in Stata 18 that allows you to create publication-quality tables
+  - It is particularly useful for exporting descriptive statistics to LaTeX, Word, and Excel
+  - It is very customizable, and you can add custom statistics, change the formatting, and add notes to the table
+  - See more [here](https://www.stata.com/new-in-stata/create-export-descriptive-statistic-tables/)
+
+## An example with `dtable`
+
+```stata
+webuse nhanes2l, clear
+dtable age weight bpsystol i.sex i.race, by(diabetes) export(table1.docx, replace)
+```
+
+- The `export` option allows you to export the table to a file
+  - You can specify the format of the file by changing the file extension
+  - The `replace` option allows you to overwrite an existing file
+  - you may use `table1.pdf` to export to pdf, also word, excel, latex, etc.
+  
+- The menu-driven `dtable` is also very useful for creating tables
+  - Statistics > Summaries, tables and tests > Table of descriptive statistics
+
+## If you don't have Stata 18 available
+
+- If you don't have Stata 18, `dtable` is not available, but you may use `esttout` (package)
+  
+- `estout` is a package for exporting regression tables to LaTeX, Word, and Excel
+  - It is very customizable, and you can add custom statistics, change the formatting, and add notes to the table
+  - It is particularly useful for exporting regression tables to LaTeX
+  - Check the package's [GitHub page](https://repec.org/bocode/e/estout/)
+
+## An example with `estout`'s `estpost summarize`
+
+```stata
+sysuse auto, clear
+estpost sum price mpg weight
+esttab using "summary_stats.doc", replace ///
+    cells("mean sd min max") ///
+    label title("Summary Statistics") ///
+    alignment(D) ///
+    nomtitles nonumber
+```
+
+## Regression tables with `etable`
+
+- `etable` is the new Stata command for exporting regression tables to LaTeX, Word, and Excel
+  - Available to version 18 users
+
+- In the menu, Statistics > Summaries, tables and tests > Table of estimation results
+  - Works with much more than just regressions
+
+## Regression tables exporting with `estout`
+
+- `estout` is particularly useful for exporting regression tables to LaTeX
+  - It can export tables from `reg`, `logit`, `probit`, `ivreg`, and many other packages for modelling
+  - It is very customizable, and you can add custom statistics, change the formatting, and add notes to the table
+  - Check the package's [GitHub page](https://repec.org/bocode/e/estout/) for more information
+  - Outreg2 is another useful package for exporting regression tables to LaTeX
+
+## An example with `estout`
+
+```stata
+quietly regress bpsystol age weight i.region // quietly does not give output
+estimates store model1
+esttab model1 model2 using "outputs/latex_stata_export.tex", replace ///
+title("Tabla Regresion") b(%9.3f) se star booktabs
+```
+## `outreg2`
+
+- Outreg2 is another package for exporting regression results to \LaTeX
+  - A bit less used than `estout`, but still very useful
+
+- Some syntax options will be different, but the logic is similar
+  - Run the regression
+  - Store results with `est store`
+  - Export with `outreg2` using the "name" of the stored results
+  
+## An example with `outreg2`
+
+```stata
+quietly regress bpsystol age weight i.region 
+est store model1
+quietly regress bpsystol age weight 
+est store model2
+outreg2 [model*] using "outputs/latex_stata_export.tex", replace
+```
+- Notice that the `*` operator is used to select all stored results that start with `model`
+
+## Further resources
+
+- Stata is a bit clunky for these purposes, yet fortunately plenty of guides have been made to help you
+  - A full guide to [dtable](https://fintechprofessor.com/the-complete-guide-to-dtable-in-stata/)
+  - A more general guide to Stata, with a focus on earlier versions [here](https://grodri.github.io/stata/index)
+  - The [LaTeX/Stata workflows](https://lukestein.github.io/stata-latex-workflows/gallery/)
+  - The [Stata to LaTeX](https://medium.com/the-stata-guide/the-stata-to-latex-guide-6e7ed5622856) guide
 
 <!-- # Knitr/Sweave
  -->
