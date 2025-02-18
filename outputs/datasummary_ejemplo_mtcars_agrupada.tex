@@ -1,0 +1,26 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Estadistica descriptiva de mpg por cyl},
+note{}={Calculos por LIDE},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+cell{1}{2}={c=3,}{halign=c,},
+cell{1}{5}={c=3,}{halign=c,},
+column{1}={halign=l,},
+column{2}={halign=r,},
+column{3}={halign=r,},
+column{4}={halign=r,},
+column{5}={halign=r,},
+column{6}={halign=r,},
+column{7}={halign=r,},
+row{1}={halign=c,},
+}                     %% tabularray inner close
+\toprule
+& Mean &  &  & SD &  &  \\ \cmidrule[lr]{2-4}\cmidrule[lr]{5-7}
+& 4 & 6 & 8 & 4 & 6 & 8 \\ \midrule %% TinyTableHeader
+mpg & \num{26.66} & \num{19.53} & \num{15.10} & \num{4.51} & \num{1.47} & \num{2.56} \\
+\bottomrule
+\end{talltblr}
+\end{table}

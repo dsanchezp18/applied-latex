@@ -1,0 +1,49 @@
+\begin{table}
+\centering
+\begin{tblr}[         %% tabularray outer open
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]},
+column{1}={halign=l,},
+column{2}={halign=c,},
+column{3}={halign=c,},
+column{4}={halign=c,},
+column{5}={halign=c,},
+hline{24}={1,2,3,4,5}{solid, 0.05em, black},
+}                     %% tabularray inner close
+\toprule
+& (1) & (2) & (3) & (4) \\ \midrule %% TinyTableHeader
+(Intercept)                & \num{26.345}  & \num{26.345}  & \num{11.587}   &                \\
+& (\num{1.321}) & (\num{1.321}) & (\num{15.402}) &                \\
+Gross horsepower           & \num{-0.045}  & \num{-0.045}  & \num{-0.021}   & \num{-0.034}  \\
+& (\num{0.010}) & (\num{0.010}) & (\num{0.016})  & (\num{0.030}) \\
+Transmission (categorical) & \num{5.880}   & \num{5.880}   & \num{1.569}    & \num{4.379}   \\
+& (\num{1.233}) & (\num{1.233}) & (\num{2.164})  & (\num{0.934}) \\
+carb                       & \num{-0.731}  & \num{-0.731}  & \num{-0.018}   & \num{-0.394}  \\
+& (\num{0.468}) & (\num{0.468}) & (\num{0.616})  & (\num{0.527}) \\
+cyl                        &                &                & \num{0.325}    &                \\
+&                &                & (\num{0.922})  &                \\
+disp                       &                &                & \num{0.008}    &                \\
+&                &                & (\num{0.012})  &                \\
+drat                       &                &                & \num{0.523}    &                \\
+&                &                & (\num{1.016})  &                \\
+log(wt)                    &                &                & \num{-14.149}  &                \\
+&                &                & (\num{4.220})  &                \\
+qsec                       &                &                & \num{1.030}    &                \\
+&                &                & (\num{0.593})  &                \\
+vs                         &                &                & \num{-0.353}   &                \\
+&                &                & (\num{1.184})  &                \\
+gear                       &                &                & \num{0.782}    &                \\
+&                &                & (\num{1.136})  &                \\
+Num.Obs.                   & \num{32}      & \num{32}      & \num{31}       & \num{32}      \\
+R2                         & \num{0.796}   & \num{0.796}   & \num{0.895}    & \num{0.827}   \\
+R2 Adj.                    & \num{0.775}   & \num{0.775}   & \num{0.842}    & \num{0.794}   \\
+R2 Within                  &                &                &                 & \num{0.355}   \\
+R2 Within Adj.             &                &                &                 & \num{0.281}   \\
+Log.Lik.                   & \num{-76.906} & \num{-76.906} & \num{-64.737}  &                \\
+F                          &                &                & \num{21.615}   &                \\
+Std.Errors                 & HC1            & HC1            & HC1             & by: cyl        \\
+FE: cyl                    &                &                &                 & X              \\
+\bottomrule
+\end{tblr}
+\end{table}
