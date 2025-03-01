@@ -1,3 +1,3 @@
-# Curso de LaTeX y Markdown Aplicado LIDE
+# Applied LaTeX for Researchers
 
-Este repositorio guarda los materiales del curso de LaTeX y Markdown del Laboratorio de Investigación para el Desarrollo del Ecuador (LIDE).
+This repository holds the materials for the LaTeX workshop on March 7th, 2025. 
