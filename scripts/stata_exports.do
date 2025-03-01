@@ -1,11 +1,10 @@
 // Exporting from Stata to other formats
 
-
 ** Preliminaries -------------------------------------
 
-version 18
+version 18 // mantener compatibilidad
 
-set more off
+set more off // apagar el "more" en la "consola" de Stata
 
 * Turns off any log that is open 
 
@@ -15,7 +14,9 @@ capture log close
 
 cd "C:\Users\user\Documents\GitHub\applied-latex"
 
-log using stata_exports_log_clase.txt, replace
+// log
+
+log using stata_exports_log_clase.txt, text replace
 
 * use a random dataset
 
@@ -29,6 +30,8 @@ dtable age weight, by(region) // cool group by statistics
 
 dtable age weight, by(region) export("outputs/table_by_region_stata_export.docx")
 
+dtable weight, by(sex) export("outputs/table_by_sex.tex")
+
 summarize age // cannot be exported unless you do a lengthy workflow with collect export.
 
 ** Regressions ---------------------------------------------
@@ -38,6 +41,12 @@ quietly regress bpsystol age weight i.region // quietly does not give output
 estimates store model1
 
 etable, estimates(model1) showstars showstarsnote title("Tabla Regresion") export ("outputs/word_doc_stata_export.docx", replace)
+
+reg bpsystol age, ro
+
+estimates store model2
+
+etable, estimates(model2) keep(_cons age) showstars title(Model 2) note(Elaborado por LIDE.) export("outputs/ejemplo_latex_reg_en_clase", as(tex) replace)
 
 * now, using outreg2 
 
