@@ -327,6 +327,70 @@
 \end{itemize}
 \end{frame}
 
+\begin{frame}{Creating tables}
+    \begin{itemize}
+        \item Tables are created using the \texttt{tabular} environment.
+        \item Columns are defined using the \texttt{l}, \texttt{c}, and \texttt{r} specifiers for left, center, and right alignment, respectively.
+        \item Columns are separated by the \texttt{\&} symbol.
+        \item Rows are separated by the double backslash (\texttt{\textbackslash\textbackslash}) command.
+        \item Horizontal lines can be added using the \texttt{\textbackslash hline} command.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Example of a simple table}
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        Column 1 & Column 2 & Column 3 \\
+        \hline
+        Data 1 & Data 2 & Data 3 \\
+        Data 4 & Data 5 & Data 6 \\
+        Data 7 & Data 8 & Data 9 \\
+        \hline
+    \end{tabular}
+\end{frame}
+
+\begin{frame}{Advanced tables}
+    \begin{itemize}
+        \item The \texttt{booktabs} package provides additional commands for creating professional-looking tables.
+        \item The \texttt{\textbackslash toprule}, \texttt{\textbackslash midrule}, and \texttt{\textbackslash bottomrule} commands can be used to add horizontal lines.
+        \item The \texttt{multirow} package allows for cells to span multiple rows.
+        \item The \texttt{tabu} package provides additional functionality for creating complex tables.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Example of an advanced table}
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \toprule
+        Column 1 & Column 2 & Column 3 \\
+        \midrule
+        \multirow{2}{*}{Data 1} & Data 2 & Data 3 \\
+        & Data 5 & Data 6 \\
+        Data 7 & \multicolumn{2}{c|}{Data 8 and 9} \\
+        \bottomrule
+    \end{tabular}
+\end{frame}
+
+\begin{frame}{Tools for creating tables}
+    \begin{itemize}
+        \item Manually creating the \texttt{tabular} environment can be tedious.
+        \item Check out online tools such as the Overleaf tables editor or \href{tablesgenerator.com}{tablesgenerator.com}.
+        \item The Excel addin, Excel2LaTeX, can be used to convert Excel tables to \LaTeX, \href{https://github.com/ivankokan/Excel2LaTeX/releases/tag/v3.5.0}{download here}.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Figures}
+    \begin{itemize}
+        \item Figures can be included in a \LaTeX \ document using the \texttt{figure} environment.
+        \item The \texttt{graphicx} package is used to include images.
+        \item The \texttt{\textbackslash includegraphics} command is used to include images.
+        \item The \texttt{caption} command is used to add a caption to the figure.
+        \item The \texttt{label} command is used to add a label to the figure for cross-referencing.
+        \item Tips: take care of file paths!
+    \end{itemize}
+\end{frame}
+
 %\section{Citations and References}
 
 %\section{Exporting to \LaTeX from other software}
