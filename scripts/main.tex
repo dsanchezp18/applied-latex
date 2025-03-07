@@ -1,0 +1,194 @@
+% This is the "preamble" of the TeX file. 
+\documentclass[12pt]{article} % document class gives base settings to the document
+
+% functions take in arguments. 
+% "mandatory" arguments
+% are entered with curly brackets. 
+% optional arguments
+% square brackets, before the curly brackets. 
+
+\usepackage{graphicx} % Required for inserting images
+\usepackage{lipsum} % package for dummy text
+\usepackage{setspace} % changes spacing for lines
+    \doublespacing % set double spacing for the complete document
+\usepackage{hyperref} % for hyperlinks and section links
+\usepackage{amsmath} % for math stuff
+\usepackage{babel}
+\usepackage{booktabs} % for table lines
+
+\title{Class} % these are metadata functions, they do not create the title. 
+\author{Daniel Sánchez}
+\date{March 2025}
+
+
+\begin{document} % the preamble ends after the begin document function
+
+\maketitle % make the title command
+
+\tableofcontents
+
+Hello, this is some text.
+
+I can write bold as \textbf{bold}. 
+
+\textit{italics}
+
+\underline{underline}.
+
+This is a list. 
+
+\begin{itemize}
+    \item  This is the first item in my list.
+    \item This is the second item in my list.
+\end{itemize}
+
+\begin{enumerate}
+    \item First item
+    \begin{enumerate}
+        \item a nested item 
+        \item another nested item
+    \end{enumerate}
+    \item some other item
+    \item item
+    \item item 
+\end{enumerate}
+
+\noindent \lipsum[1]
+
+\vspace{0.5cm}
+
+\lipsum[2]
+
+% never forget to use the percentage function if you actually want to write a percentage in-text. 
+
+GDP increased by 10\% and also inflation rised by 5\%.
+
+\textbackslash
+
+\section{Introduction}
+
+\lipsum 
+
+\subsection{This is a subsection}
+
+\lipsum 
+
+\subsubsection{This subsubsection}
+
+\lipsum 
+
+\section{Another section}
+
+\lipsum[2]
+
+\section*{Section that is not numbered}
+
+\section{Math Mode}
+
+Enter math mode with the dollar sign:
+
+$x + 1$
+
+x + 1
+
+\textit{x+1}
+
+$x^2$
+
+$x_2$
+
+$\frac{2}{3}$
+Rules of math mode:
+
+\begin{itemize}
+    \item Powers are hats.
+    \item Subscripts are underscores
+    \item Fractions are dfrac
+\end{itemize}
+
+This is a line. It has math in it. $x + 1 = 2$
+
+There is another line without math $$x + 1 = 2$$
+
+The equation environment:
+
+\begin{equation}
+    x^2 + x^3 + \frac{3}{5}
+    \label{eqn:equation}
+\end{equation}
+
+Equation \ref{eqn:equation} is the first equation in my paper. 
+
+This is a sentence with a fraction $\frac{2}{3}$. 
+
+This is another sentence with a fraction $\dfrac{2}{3}$. 
+
+Greek letters come with the ams math package. 
+
+\begin{equation*}
+     y = \beta_0 + \beta_1 x + \varepsilon
+\end{equation*}
+
+To create a summation with limits, use the underscore and exponent:
+
+$$ \sum_{i=1}^n x_i $$
+
+$$\int_{x}^{y} x \ dx$$
+
+\begin{equation}
+    \text{earnings} = \beta_0 + \beta_1 \text{school} + \epsilon 
+\end{equation}
+
+$$log(y)$$
+
+$$\log_5(y)$$
+
+$$\ln x$$
+
+$$ \max {y} $$
+
+$$ \min{y} $$
+
+\begin{align*}
+&x + 6 = 10  && &x - 7 \qquad  = 9\\ 
+&y + 1 + x= 20  && &y + 8  \quad = 9\\
+&z - 7  = 20 && &z + 6  = 0
+\end{align*}
+
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{cccr}
+    \toprule
+        A & b & c & D \\
+    \midrule
+        1 & 2 & 3 & 6 \\
+        4 & 5 & 6 & 7 \\
+    \bottomrule
+    \end{tabular}
+    \caption{Caption}
+    \label{tab:my_label}
+\end{table}
+
+
+\begin{table}[]
+\begin{tabular}{|l|c|}
+\hline
+                                                               & (1)                   \\ \hline
+VARIABLES                                                      & turnout\_total        \\ \hline
+                                                               &                       \\ \hline
+treatment                                                      & 8.301**               \\ \hline
+                                                               & (3.487)               \\ \hline
+registered\_total                                              & 0.0582***             \\ \hline
+                                                               & (0.00382)             \\ \hline
+Constant                                                       & 337.2***              \\ \hline
+                                                               & (9.714)               \\ \hline
+                                                               &                       \\ \hline
+Observations                                                   & 6,950                 \\ \hline
+R-squared                                                      & 0.111                 \\ \hline
+Standard   errors in parentheses                               & \multicolumn{1}{l|}{} \\ \hline
+***   p\textless{}0.01, ** p\textless{}0.05, * p\textless{}0.1 & \multicolumn{1}{l|}{} \\ \hline
+\end{tabular}
+\end{table}
+
+\end{document}
