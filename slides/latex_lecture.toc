@@ -1,4 +1,0 @@
-\babel@toc {canadian}{}\relax 
-\beamer@sectionintoc {1}{Getting started}{4}{0}{1}
-\beamer@sectionintoc {2}{Beginning a document}{7}{0}{2}
-\beamer@sectionintoc {3}{Math mode}{22}{0}{3}
